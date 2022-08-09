@@ -3,7 +3,7 @@ package com.github.benjaminmoran.superfluous.hash;
 import java.nio.ByteBuffer;
 import java.util.Objects;
 
-public abstract class AbstractBlockHasher extends AbstractHasher {
+abstract class AbstractBlockHasher extends AbstractHasher {
   protected final ByteBuffer blockBuf;
   protected long blocksProcessed;
 
