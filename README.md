@@ -1,5 +1,7 @@
 # superfluous
 
+\[[Javadocs]\]
+
 Java implementations of popular cryptographic hash functions
 
 ## Usage example
@@ -12,11 +14,15 @@ assertTrue(digest.verify("Hello, world!".getBytes()));
 assertFalse(digest.verify("another message".getBytes()));
 ```
 
-For more information, see the Javadocs.
+For more information, see the [Javadocs].
 
 ## Hash functions
 
-The definitions of these hash functions are linked in the Javadocs for `HashFunctions`.
+The definitions of these hash functions are linked in [`HashFunctions`].
+
+[`HashFunctions`]: https://benjaminmoran.github.io/superfluous/com/github/benjaminmoran/superfluous/hash/HashFunctions.html
 
 * [SHA-256](src/main/java/com/github/benjaminmoran/superfluous/hash/Sha256Hasher.java) (256 bits;
   NIST)
+
+[Javadocs]: https://benjaminmoran.github.io/superfluous/
