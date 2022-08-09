@@ -40,12 +40,12 @@ jobs:
       - name: Set up Pages
         id: pages
         uses: actions/configure-pages@v1
-      - name: Build with Gatsby
+      - name: Build Javadocs with Gradle
         run: ./gradlew javadoc
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./build/docs
+          path: ./build/docs/javadoc
 
   # Deployment job
   deploy:
